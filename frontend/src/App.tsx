@@ -15,7 +15,7 @@ function App() {
     <>
       <h1>Gallery</h1>
       <button onClick={handleImageLoad}>Load image</button>
-      {image ? <img src={image} /> : <p>Loading...</p>}
+      {image ? <img src={image} width={300} style={{display: 'block'}} /> : <p>Loading...</p>}
     </>
   )
 }
