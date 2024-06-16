@@ -8,12 +8,21 @@ Demostration project to show how to display images from an S3-compatible Object 
 
 - Install dependencies
 
-```
-pnpm istall
+```bash
+cd backend
+pnpm install
+
+cd ../frontend
+pnpm install
 ```
 
 - Start the app
 
-```
+```bash
+cd backend
+pnpm dev
+
+# On another Terminal
+cd frontend
 pnpm dev
 ```
