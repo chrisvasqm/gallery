@@ -6,7 +6,7 @@ function App() {
   const [image, setImage] = useState('');
 
   const handleImageLoad = async () => {
-    const response = await axios.get('http://localhost:3001/api/image');
+    const response = await axios.get('http://localhost:3001/api/image/wallpaper-1-min.webp');
     setImage(response.data);
   }
 
