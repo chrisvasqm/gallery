@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 
-app.use('/api/image', (req, res) => {
+app.use('/api/image', (_, res) => {
   res.send(signedUrl);
 });
 
