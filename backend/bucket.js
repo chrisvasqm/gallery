@@ -12,8 +12,6 @@ export const getSignedUrl = (key) => {
     Bucket: process.env.BUCKET_NAME,
     Key: key
   };
-  
+
   return s3.getSignedUrl('getObject', params);
 };
-
-export const signedUrl = getSignedUrl('wallpaper-1-min.webp');
