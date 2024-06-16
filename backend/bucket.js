@@ -10,10 +10,10 @@ const s3 = new aws.S3({
 export const getSignedUrl = (key) => {
   const params = {
     Bucket: process.env.BUCKET_NAME,
-    Key: key,
-    Expires: 60 // URL expiration time in seconds
+    Key: key
   };
+  
   return s3.getSignedUrl('getObject', params);
 };
 
-export const signedUrl = getSignedUrl('wallpaper-1.jpg')
+export const signedUrl = getSignedUrl('wallpaper-1-min.webp');
